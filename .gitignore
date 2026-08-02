@@ -1,0 +1,46 @@
+__pycache__/
+*.pyc
+.remember/
+data/input/*_profiles.csv
+data/input/optimization_config.json
+data/output/
+runs/
+*.log
+.DS_Store
+data/input/*.pkl
+
+# Marine ERA5 dataset. The processed per-site arrays (~2 MB each) are the
+# dataset the paper's Data Availability statement promises, so they are tracked.
+# Only the raw Open-Meteo API response cache is excluded; it is re-fetchable
+# from the coordinates and years recorded in the manifests.
+data/marine/cache/
+
+# LaTeX build artifacts (paper_a/)
+paper_a/*.aux
+paper_a/*.bbl
+paper_a/*.blg
+paper_a/*.out
+paper_a/*.log
+paper_a/*.pdf
+paper_a/*.fls
+paper_a/*.fdb_latexmk
+paper_a/*.abs
+# ...but the graphical abstract is a source asset (exported from the .drawio),
+# not a build artifact, and is uploaded separately at submission.
+!paper_a/graphical_abstract.pdf
+
+# LaTeX build artifacts (paper/)
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.out
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.pdf
+paper/*.synctex.gz
+paper/build*.log
+
+# Engine-A trained checkpoint (~39 MB). Kept out of git history to avoid
+# bloating clones; it is regenerable via experiments/run_marine.py and is
+# attached to the tagged GitHub Release as a downloadable asset.
+data/input/*.pt
