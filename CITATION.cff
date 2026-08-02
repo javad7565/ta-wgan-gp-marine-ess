@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the paper below."
+title: "TA-WGAN-GP: Temporal-Aware Wasserstein GAN for Marine Wind-Power Scenario Generation"
+abstract: >-
+  A temporal-aware conditional Wasserstein GAN with gradient penalty that pairs a
+  self-attention generator with paired spatial and temporal discriminators, for
+  generating marine wind-power scenarios that preserve ramp and autocorrelation
+  structure for shipboard energy-storage sizing.
+type: software
+license: MIT
+repository-code: "https://github.com/javad7565/ta-wgan-gp-marine-ess"
+authors:
+  - family-names: Azarakhsh
+    given-names: Javad
+    orcid: "https://orcid.org/0009-0003-9176-1875"
+    affiliation: "University of Sistan and Baluchestan"
+    email: javadazarakhsh@pgs.usb.ac.ir
+  - family-names: Oukati Sadegh
+    given-names: Mahmoud
+    orcid: "https://orcid.org/0000-0002-3806-1883"
+    affiliation: "University of Sistan and Baluchestan"
+    email: oukati@ece.usb.ac.ir
+  - family-names: Mohammadrahimi
+    given-names: Abdolhossein
+    orcid: "https://orcid.org/0000-0001-7560-6400"
+    affiliation: "Chabahar Maritime University"
+    email: rahimi@cmu.ac.ir
+keywords:
+  - wind power
+  - scenario generation
+  - generative adversarial networks
+  - self-attention
+  - temporal dependence
+  - marine reanalysis
+  - ship power systems
+preferred-citation:
+  type: article
+  title: "Temporal-Aware Wasserstein GAN with Self-Attention for Marine Wind-Power Scenario Generation"
+  journal: "Ocean Engineering"
+  year: 2026
+  authors:
+    - family-names: Azarakhsh
+      given-names: Javad
+      orcid: "https://orcid.org/0009-0003-9176-1875"
+    - family-names: Oukati Sadegh
+      given-names: Mahmoud
+      orcid: "https://orcid.org/0000-0002-3806-1883"
+    - family-names: Mohammadrahimi
+      given-names: Abdolhossein
+      orcid: "https://orcid.org/0000-0001-7560-6400"

@@ -1,0 +1,15 @@
+bus_id,name,type,rated_kw,priority,base_load_kw
+0,PGM-fwd,gen,400.0,0,0.0
+1,PGM-aft,gen,400.0,0,0.0
+2,APM-fwd,gen,150.0,0,0.0
+3,APM-aft,gen,150.0,0,0.0
+4,PV Array,res,80.0,0,0.0
+5,Wind Turbine,res,60.0,0,0.0
+6,Port Bus,tie,0.0,0,0.0
+7,Starboard Bus,tie,0.0,0,0.0
+8,Zone-1 Load,load,60.0,1,60.0
+9,Zone-2 Load,load,50.0,1,50.0
+10,Zone-3 Load,load,120.0,2,120.0
+11,Zone-4 Load,load,40.0,3,40.0
+12,Propulsion-Port,load,200.0,2,200.0
+13,Propulsion-Stbd,load,200.0,2,200.0

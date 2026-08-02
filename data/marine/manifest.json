@@ -1,0 +1,38 @@
+{
+  "route": "gulf_of_oman",
+  "source": "ERA5 via Open-Meteo archive API",
+  "variable": "wind_speed_100m",
+  "lat": 25.0,
+  "lon": 58.0,
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "rated_kw": 5000.0,
+  "v_cut_in": 3.0,
+  "v_rated": 12.0,
+  "v_cut_out": 25.0,
+  "window": 576,
+  "stride": 288,
+  "split": "temporal",
+  "N": 3650,
+  "n_train": 2919,
+  "n_val": 730,
+  "label_counts": [
+    163,
+    138,
+    131,
+    567,
+    2651
+  ],
+  "hourly_hours": 87648,
+  "npz": "data/marine/wind_gulf_of_oman.npz"
+}

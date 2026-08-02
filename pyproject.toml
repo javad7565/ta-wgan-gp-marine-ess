@@ -1,0 +1,20 @@
+[project]
+name = "ta-wgan-gp-marine-ess"
+version = "0.1.0"
+description = "Temporal-aware WGAN-GP for marine wind-power scenario generation and shipboard ESS sizing"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    # netCDF4 is compiled against a different numpy; harmless binary-compat warning
+    "ignore:numpy.ndarray size changed:RuntimeWarning",
+]
