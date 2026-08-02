@@ -7,30 +7,10 @@ Code and data accompanying the paper:
 > Javad Azarakhsh, Mahmoud Oukati Sadegh, Abdolhossein Mohammadrahimi
 > *Submitted to Ocean Engineering (Elsevier), 2026.*
 
-TA-WGAN-GP is a conditional Wasserstein GAN with a gradient penalty that pairs a
-self-attention generator with **two** critics: a conditional *spatial* critic on
-the reshaped 24x24 field, and an unconditional *temporal* critic on the full
-576-step sequence. The second critic is the contribution. It exists because a
-single spatially-biased discriminator reproduces the wind-power histogram while
-quietly flattening the autocorrelation and softening the ramps, which are
-exactly the features that set energy-storage power and energy ratings.
-
-Every result is computed on **marine** ERA5 reanalysis (not onshore wind), at
-two sites: a Gulf of Oman route point and a Persian Gulf route point.
 
 ## Results at a glance
 
-Against a single-discriminator WGAN-GP ablation that differs only by the
-temporal critic, TA-WGAN-GP improves Frechet distance by 68.3% and wins on all
-seven metrics. Across the four baselines (WGAN-GP, Gaussian copula, denoising
-diffusion, TimeGAN) it attains the best autocorrelation, spectral,
-distributional, and Frechet fidelity. Two baselines still lead on one metric
-each: the Gaussian copula on spatial correlation, which it matches by
-construction, and TimeGAN on ramp rate, at the cost of poor autocorrelation.
 
-An ablation reports a negative result worth knowing: adding spectral
-normalization on top of the gradient penalty **degrades** fidelity on this
-marine data, so the shipped model omits it.
 
 ## Data and provenance
 
